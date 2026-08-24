@@ -1,7 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "banyumala-guide",
-  "main": "dist/_worker.js/index.js",
   "compatibility_date": "2026-08-01",
   "assets": { "directory": "dist", "binding": "ASSETS" }
 }
