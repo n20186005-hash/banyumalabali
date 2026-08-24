@@ -1,0 +1,11 @@
+---
+const { compact = false } = Astro.props;
+---
+<a href="/" class="inline-flex items-center gap-3 no-underline" aria-label="Banyumala Guide">
+  <svg viewBox="0 0 64 64" class="h-10 w-10" aria-hidden="true">
+    <path d="M32 4C21 18 13 26 13 38a19 19 0 0 0 38 0C51 26 43 18 32 4Z" fill="#123b32"/>
+    <path d="M25 22c-2 9-3 18 7 25 9-7 8-16 6-25-2 7-4 13-6 16-2-3-5-9-7-16Z" fill="#d9ead5"/>
+    <path d="M18 43c8 1 15 5 20 12" stroke="#a8c39b" stroke-width="3" stroke-linecap="round"/>
+  </svg>
+  {!compact && <span class="leading-none"><strong class="block font-serif text-lg">Banyumala</strong><small class="text-[10px] tracking-[.22em] uppercase">Panduan Alam</small></span>}
+</a>

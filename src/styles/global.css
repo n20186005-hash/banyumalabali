@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@theme {
+  --font-sans: "Aptos", "Segoe UI", system-ui, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+}
+:root { color-scheme: light; --forest:#123b32; --moss:#5d7f5b; --mist:#eef3eb; --stone:#d8d0bd; --ink:#17221d; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:#f6f4ed; color:var(--ink); font-family:var(--font-sans); }
+a { color:inherit; }
+.prose p { line-height:1.8; margin:0 0 1rem; }
+.eyebrow { letter-spacing:.18em; text-transform:uppercase; font-size:.72rem; font-weight:700; }
+.card { border:1px solid rgba(23,34,29,.12); background:rgba(255,255,255,.7); border-radius:1.5rem; }
