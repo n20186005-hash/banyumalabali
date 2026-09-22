@@ -1,8 +1,8 @@
 globalThis.process ??= {};
 globalThis.process.env ??= {};
-import { S as InvalidComponentArgs, n as AstroError } from "./shorthash_BX6pBsgk.mjs";
-import "./server_CQpCcbgy.mjs";
-//#region node_modules/.pnpm/astro@7.2.4_@emnapi+core@1._94ce14e1bd9f0fff5de4c015d001c653/node_modules/astro/dist/runtime/server/astro-component.js
+import { S as InvalidComponentArgs, n as AstroError } from "./shorthash_DQ2vzmGS.mjs";
+import "./server_DnbemVnc.mjs";
+//#region node_modules/astro/dist/runtime/server/astro-component.js
 function validateArgs(args) {
 	if (args.length !== 3) return false;
 	if (!args[0] || typeof args[0] !== "object") return false;

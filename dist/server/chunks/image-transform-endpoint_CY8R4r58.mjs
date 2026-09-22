@@ -1,9 +1,9 @@
 globalThis.process ??= {};
 globalThis.process.env ??= {};
 import { t as __exportAll } from "./rolldown-runtime_D7vh-g_o.mjs";
-import { t as transform } from "./image-binding-transform_BxIvBo1a.mjs";
+import { t as transform } from "./image-binding-transform_B8fkKVi5.mjs";
 import { env } from "cloudflare:workers";
-//#region node_modules/.pnpm/@astrojs+cloudflare@14.2.3__8e5cf7a6072ef048fb2292c0f9a6138c/node_modules/@astrojs/cloudflare/dist/entrypoints/image-transform-endpoint.js
+//#region node_modules/@astrojs/cloudflare/dist/entrypoints/image-transform-endpoint.js
 var image_transform_endpoint_exports = /* @__PURE__ */ __exportAll({
 	GET: () => GET,
 	prerender: () => false
@@ -29,7 +29,7 @@ var GET = async (ctx) => {
 	return cachedResponse;
 };
 //#endregion
-//#region \0virtual:astro:page:node_modules/.pnpm/@astrojs+cloudflare@14.2.3__8e5cf7a6072ef048fb2292c0f9a6138c/node_modules/@astrojs/cloudflare/dist/entrypoints/image-transform-endpoint@_@js
+//#region \0virtual:astro:page:node_modules/@astrojs/cloudflare/dist/entrypoints/image-transform-endpoint@_@js
 var page = () => image_transform_endpoint_exports;
 //#endregion
 export { page };

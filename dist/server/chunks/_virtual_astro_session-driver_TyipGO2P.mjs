@@ -1,6 +1,6 @@
 globalThis.process ??= {};
 globalThis.process.env ??= {};
-//#region node_modules/.pnpm/unstorage@1.17.5/node_modules/unstorage/drivers/utils/index.mjs
+//#region node_modules/unstorage/drivers/utils/index.mjs
 function defineDriver(factory) {
 	return factory;
 }
@@ -17,7 +17,7 @@ function createError(driver, message, opts) {
 	return err;
 }
 //#endregion
-//#region node_modules/.pnpm/unstorage@1.17.5/node_modules/unstorage/drivers/utils/cloudflare.mjs
+//#region node_modules/unstorage/drivers/utils/cloudflare.mjs
 function getBinding(binding) {
 	let bindingName = "[binding]";
 	if (typeof binding === "string") {
@@ -36,7 +36,7 @@ function getKVBinding(binding = "STORAGE") {
 	return getBinding(binding);
 }
 //#endregion
-//#region node_modules/.pnpm/unstorage@1.17.5/node_modules/unstorage/drivers/cloudflare-kv-binding.mjs
+//#region node_modules/unstorage/drivers/cloudflare-kv-binding.mjs
 var DRIVER_NAME = "cloudflare-kv-binding";
 //#endregion
 //#region \0virtual:astro:session-driver

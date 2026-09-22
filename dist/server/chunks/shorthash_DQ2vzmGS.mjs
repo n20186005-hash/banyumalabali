@@ -1,6 +1,6 @@
 globalThis.process ??= {};
 globalThis.process.env ??= {};
-//#region node_modules/.pnpm/astro@7.2.4_@emnapi+core@1._94ce14e1bd9f0fff5de4c015d001c653/node_modules/astro/dist/core/errors/errors-data.js
+//#region node_modules/astro/dist/core/errors/errors-data.js
 var ClientAddressNotAvailable = {
 	name: "ClientAddressNotAvailable",
 	title: "`Astro.clientAddress` is not available in current adapter.",
@@ -306,12 +306,12 @@ var CacheNotEnabled = {
 	hint: "Use an adapter that provides a default cache provider, or set one explicitly: `cache: { provider: \"...\" }`. See https://docs.astro.build/en/guides/caching/."
 };
 //#endregion
-//#region node_modules/.pnpm/astro@7.2.4_@emnapi+core@1._94ce14e1bd9f0fff5de4c015d001c653/node_modules/astro/dist/core/errors/utils.js
+//#region node_modules/astro/dist/core/errors/utils.js
 function normalizeLF(code) {
 	return code.replace(/\r\n|\r(?!\n)|\n/g, "\n");
 }
 //#endregion
-//#region node_modules/.pnpm/astro@7.2.4_@emnapi+core@1._94ce14e1bd9f0fff5de4c015d001c653/node_modules/astro/dist/core/errors/printer.js
+//#region node_modules/astro/dist/core/errors/printer.js
 function codeFrame(src, loc) {
 	if (!loc || loc.line === void 0 || loc.column === void 0) return "";
 	const lines = normalizeLF(src).split("\n").map((ln) => ln.replace(/\t/g, "  "));
@@ -334,7 +334,7 @@ function codeFrame(src, loc) {
 	return output;
 }
 //#endregion
-//#region node_modules/.pnpm/astro@7.2.4_@emnapi+core@1._94ce14e1bd9f0fff5de4c015d001c653/node_modules/astro/dist/core/errors/errors.js
+//#region node_modules/astro/dist/core/errors/errors.js
 function isAstroError(e) {
 	return e != null && (e instanceof AstroError || AstroError.is(e));
 }
@@ -375,7 +375,7 @@ var AstroError = class extends Error {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/astro@7.2.4_@emnapi+core@1._94ce14e1bd9f0fff5de4c015d001c653/node_modules/astro/dist/runtime/server/shorthash.js
+//#region node_modules/astro/dist/runtime/server/shorthash.js
 /**
 * shortdash - https://github.com/bibig/node-shorthash
 *

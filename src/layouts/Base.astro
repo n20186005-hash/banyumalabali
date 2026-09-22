@@ -3,15 +3,20 @@ import '../styles/global.css';
 import Logo from '../components/Logo.astro';
 import Footer from '../components/Footer.astro';
 const { title, description } = Astro.props;
-const site = Astro.site;
-const canonical = site ? new URL(Astro.url.pathname, site).toString() : undefined;
-const ogImage = site ? new URL('/images/banyumala-hero.jpg', site).toString() : '/images/banyumala-hero.jpg';
+const FALLBACK_ORIGIN = 'https://banyumalabali.com';
+const site = Astro.site ?? new URL(FALLBACK_ORIGIN);
+const origin = site.origin;
+const canonical = new URL(Astro.url.pathname, origin).toString();
+const ogImage = new URL('/images/banyumala-hero.jpg', origin).toString();
 ---
 <!doctype html><html lang="id"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title><meta name="description" content={description}>
-{canonical && <link rel="canonical" href={canonical} />}
-<meta property="og:title" content={title}><meta property="og:description" content={description}><meta property="og:type" content="website"><meta property="og:image" content={ogImage}>{canonical && <meta property="og:url" content={canonical} />}
+<link rel="canonical" href={canonical} />
+<meta property="og:title" content={title}><meta property="og:description" content={description}><meta property="og:type" content="website"><meta property="og:image" content={ogImage}><meta property="og:image:alt" content="Air Terjun Banyumala di Wanagiri, Buleleng, Bali"><meta property="og:url" content={canonical}>
+<meta name="theme-color" content="#123b32"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="application-name" content="Panduan Banyumala">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml"><link rel="icon" href="/icons/favicon-32.png" sizes="32x32"><link rel="icon" href="/icons/favicon-16.png" sizes="16x16"><link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 <script is:inline>{`(function(){if(localStorage.getItem('banyumala-analytics')==='granted'){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};window.gtag=gtag;gtag('js',new Date());gtag('config','G-HXM22WWPKP',{anonymize_ip:true});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HXM22WWPKP';document.head.appendChild(s)}})();`}</script>
+<script is:inline>{`if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})}`}</script>
 </head><body><header class="fixed z-50 top-0 inset-x-0 p-4"><div class="mx-auto max-w-6xl rounded-full bg-[#f6f4ed]/90 backdrop-blur px-5 py-3 flex items-center justify-between shadow-sm"><Logo compact={false}/><nav class="hidden md:flex gap-6 text-sm"><a href="/#cerita">Cerita</a><a href="/#rencana">Rencana kunjungan</a><a href="/#akses">Akses</a><a href="/#faq">FAQ</a></nav></div></header><main><slot /></main><Footer/></body></html>

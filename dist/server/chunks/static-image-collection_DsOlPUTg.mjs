@@ -1,8 +1,8 @@
 globalThis.process ??= {};
 globalThis.process.env ??= {};
-import { a as recordStaticImage } from "./default-handler_Bv9DkA9C.mjs";
-import { C as removeBase, S as prependForwardSlash, c as isESMImportedImage, n as propsToFilename, t as hashTransform, x as joinPaths } from "./assets_D5Vb3fTj.mjs";
-//#region node_modules/.pnpm/@astrojs+cloudflare@14.2.3__8e5cf7a6072ef048fb2292c0f9a6138c/node_modules/@astrojs/cloudflare/dist/utils/static-image-collection.js
+import { a as recordStaticImage } from "./default-handler_U6Vc0YJs.mjs";
+import { C as removeBase, S as prependForwardSlash, c as isESMImportedImage, n as propsToFilename, t as hashTransform, x as joinPaths } from "./assets_LXo8EfHP.mjs";
+//#region node_modules/@astrojs/cloudflare/dist/utils/static-image-collection.js
 function installAddStaticImage(config) {
 	if (globalThis.astroAsset?.addStaticImage) return;
 	if (!globalThis.astroAsset) globalThis.astroAsset = { referencedImages: /* @__PURE__ */ new Set() };
