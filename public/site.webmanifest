@@ -1,7 +1,7 @@
 {
   "name": "Panduan Air Terjun Banyumala",
   "short_name": "Banyumala",
-  "description": "Panduan independen dan nirlaba untuk Air Terjun Banyumala di Wanagiri, Buleleng, Bali.",
+  "description": "Panduan independen untuk Air Terjun Banyumala di Wanagiri, Buleleng, Bali.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

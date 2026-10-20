@@ -10,3 +10,8 @@ a { color:inherit; }
 .prose p { line-height:1.8; margin:0 0 1rem; }
 .eyebrow { letter-spacing:.18em; text-transform:uppercase; font-size:.72rem; font-weight:700; }
 .card { border:1px solid rgba(23,34,29,.12); background:rgba(255,255,255,.7); border-radius:1.5rem; }
+nav a,button{min-height:44px;display:inline-flex;align-items:center}button{padding:.65rem 1.1rem;border-radius:999px;border:1px solid #123b32;background:#123b32;color:white;font:inherit;cursor:pointer}a{overflow-wrap:anywhere}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #ad742f;outline-offset:4px}.skip-link{position:absolute;top:-100px;left:1rem;background:white;z-index:100;padding:1rem}.skip-link:focus{top:0}.cookie-banner{max-width:72rem;margin:1.5rem auto;padding:1.25rem;background:#e6ecdf;border:1px solid #adbea4}.cookie-banner.hidden{display:none}summary{min-height:44px;cursor:pointer;padding:.6rem 0}img{max-width:100%;height:auto}html{scroll-padding-top:1rem}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+footer svg{filter:brightness(0) invert(1)}
+
+.hero-photo{height:100%}.hero-cta{color:#123b32}
